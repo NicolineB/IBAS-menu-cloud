@@ -1,0 +1,11 @@
+﻿@page
+@model MenuModel
+
+
+<h1>Menu</h1>
+
+@foreach (var item in Model.MenuItems)
+{
+    <p>@item.Weekday - Cold Dish: @item.ColdDish, Warm Dish: @item.WarmDish</p>
+}
+
